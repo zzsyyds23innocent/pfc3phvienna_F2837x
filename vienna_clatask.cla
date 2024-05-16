@@ -1,0 +1,131 @@
+//#############################################################################
+//
+// FILE:   vienna_clatask.cla
+//
+// TITLE:  CLA Task file
+//
+//#############################################################################
+// $TI Release: TIDM_1000 v4.01.05.00 $
+// $Release Date: Thu Dec 14 13:12:56 CST 2023 $
+// $Copyright:
+// Copyright (C) 2023 Texas Instruments Incorporated - http://www.ti.com/
+//
+// ALL RIGHTS RESERVED
+// $
+//#############################################################################
+#define INTERRUPT_H
+
+#include "vienna.h"
+
+//
+// Task 1 - Title Here
+//
+// Description: Description/steps here.
+//
+//-----------------------------------------------------------------------------
+//
+__attribute__((interrupt))  void Cla1Task1 ( void )
+{
+    #if(CLA_DEBUG == 1)
+    __mdebugstop();
+    #endif
+
+    #if VIENNA_CONTROL_RUNNING_ON == CLA_CORE
+        VIENNA_pfcControlCode();
+    #endif
+    #if(CLA_DEBUG == 1)
+        __mdebugstop();
+    #endif
+
+}
+
+//
+//-----------------------------------------------------------------------------
+//
+// Task 2 - Title Here
+//
+// Description: Description/steps here.
+//
+//-----------------------------------------------------------------------------
+//
+__attribute__((interrupt))  void Cla1Task2 ( void )
+{
+
+}
+
+//
+//-----------------------------------------------------------------------------
+//
+// Task 3 - Title Here
+//
+// Description: Description/steps here.
+//
+//-----------------------------------------------------------------------------
+//
+__attribute__((interrupt))  void Cla1Task3 ( void )
+{
+
+}
+
+//
+//-----------------------------------------------------------------------------
+//
+// Task 4 - Title Here
+//
+// Description: Description/steps here.
+//
+//-----------------------------------------------------------------------------
+//
+__attribute__((interrupt))  void Cla1Task4 ( void )
+{
+
+}
+
+//
+//-----------------------------------------------------------------------------
+//
+// Task 5 - Title Here
+//
+// Description: Description/steps here.
+//
+//-----------------------------------------------------------------------------
+//
+__attribute__((interrupt))  void Cla1Task5 ( void )
+{
+
+}
+
+//
+//-----------------------------------------------------------------------------
+//
+// Task 6 - Title Here
+//
+// Description: Description/steps here.
+//
+//-----------------------------------------------------------------------------
+//
+__attribute__((interrupt))  void Cla1Task6 ( void )
+{
+
+}
+
+//
+//-----------------------------------------------------------------------------
+//
+// Task 7 - One Time Initialization Task
+//
+// Description:
+//
+//-----------------------------------------------------------------------------
+//
+__attribute__((interrupt))  void Cla1Task7 ( void )
+{
+
+}
+
+
+
+
+//
+// End of File
+//
